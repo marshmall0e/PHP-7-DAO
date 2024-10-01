@@ -46,11 +46,20 @@ $aluno->insert();
 // Mostrando os dados do usuário recém-inserido
 echo $aluno;*/
 
+/*//alterar usuario 
 $usuario = new Usuario();
 
 $usuario->loadById(27);
 
 $usuario->update("professor", "!@#$%¨&*()");
+
+echo $usuario;*/
+//deletando usuarios
+$usuario = new Usuario();
+
+$usuario->loadById(27);
+
+$usuario->delete();
 
 echo $usuario;
 ?>
